@@ -13,7 +13,10 @@ let users = [
 function formatUsers(arr) {
   let result = [];
 
+  for (let {name, age, city} of arr ) {
+    result.push(`${name} (${age} лет) - ${city}`)
   }
-  // return result;
+  return result;
+}
 
 console.log(formatUsers(users));
