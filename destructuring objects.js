@@ -12,14 +12,14 @@ let users = [
 
 // РЕшение через цикл
 
-let result = [];
+/*let result = [];
 
 function formatUsers(arr) {
   for (let {name, age, city} of arr) {
     result.push(`${name} (${age}) - ${city}`)
   }
   return result;
-}
+}*/
 
 // Решение через метод map()
 
