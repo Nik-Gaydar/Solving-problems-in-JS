@@ -10,21 +10,10 @@ let users = [
   { id: 4, name: "Глеб", age: 22, city: "Казань", isActive: true }
 ];
 
-// РЕшение через цикл
-
-/*let result = [];
-
 function formatUsers(arr) {
-  for (let {name, age, city} of arr) {
-    result.push(`${name} (${age}) - ${city}`)
+  let result = [];
+
   }
-  return result;
-}*/
-
-// Решение через метод map()
-
-function formatUsers(arr) {
-  return arr.map(({name, age, city}) => `${name} (${age}) - ${city}`)
-}
+  // return result;
 
 console.log(formatUsers(users));
