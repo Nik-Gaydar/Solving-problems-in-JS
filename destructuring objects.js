@@ -10,10 +10,19 @@ let users = [
   { id: 4, name: "Глеб", age: 22, city: "Казань", isActive: true }
 ];
 
-function formatUsers(arr) {
+/*function formatUsers(arr) {
   let result = [];
 
+  for (let {name, age, city} of arr) {
+    result.push(`${name}(${age}) - ${city}`)
   }
-  // return result;
+  return result;
+}*/
+
+// Решение через map()
+
+function formatUsers(arr) {
+  return arr.map(({name, age, city}) => `${name}(${age}) - ${city}`)
+}
 
 console.log(formatUsers(users));
